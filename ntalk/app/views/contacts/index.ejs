@@ -7,12 +7,29 @@
         <div class="card">
             <div class="card-body">
                 <form class="form-inline" action="/contacts" method="post">
+                    
                     <div class="form group">
-                        <input type="text" class="form-control" name="contact[name]" placeholder="Name">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" name="contact[name]" placeholder="Name">
+                        </div>
                     </div>
-                    <div class="form-group mx-sm-1">
-                        <input type="text" class="form-control" name="contact[email]" placeholder="Email">
+
+                    <div class="form-group mx-sm-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fas fa-at"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" name="contact[email]" placeholder="Email">
+                        </div>
                     </div>
+
                     <button type="submit" class="btn btn-primary">Register</button>
                 </form>
             </div>

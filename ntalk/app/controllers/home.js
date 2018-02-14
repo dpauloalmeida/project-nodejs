@@ -3,7 +3,11 @@ module.exports = app => {
 
     const HomeController = {
         index(req, res) {
-            res.render('home/index');
+            if (req.session.user == null) {
+                res.render('home/index');
+            } else {
+                res.redirect('/contacts');
+            }
         },
         login(req, res) {
             const { user } = req.body;

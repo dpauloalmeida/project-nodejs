@@ -3,7 +3,7 @@ exports.notFound = (req, res, next) => {
     next();
 }
 
-exports.serverError = (err, req, res, next) => {
-    res.status(500).render('500', {err});
+exports.serverError = (error, req, res, next) => {
+    res.status(500).render('500', {error});
     next();
 }
