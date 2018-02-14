@@ -22,7 +22,9 @@ This is simple project of the book Code House - Node.js
 
 * [Method Overrid](https://github.com/expressjs/method-override) - Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
 
-* [Crypto]
+* [Mocha](https://mochajs.org/) - Tests run serially, allowing for flexible and accurate reporting.
+
+* [Supertest](https://github.com/visionmedia/supertest) - The motivation with this module is to provide a high-level abstraction for testing HTTP, while still allowing you to drop down to the lower-level API provided by superagent.
 
 ## Authors
 
