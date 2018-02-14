@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
 const getConnection = () => {
+    let single_connection;
+
     if (process.env.NODE_ENV == 'development') {
         mongoose.connect('mongodb://localhost/ntalk');
         return mongoose.connection;

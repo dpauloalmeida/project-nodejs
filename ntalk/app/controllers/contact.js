@@ -11,7 +11,10 @@ module.exports = app => {
                 .then(user => {
                     const { contacts } = user;
                     res.render('contacts/index', {contacts: contacts});
-                }).catch(() => res.redirect('/'));
+                }).catch(err => {
+                    console.log(err);
+                    res.redirect('/');
+                });
         },
         create(req, res) {
             const { contact } = req.body;
@@ -20,7 +23,10 @@ module.exports = app => {
 
             User.findByIdAndUpdate(_id, set)
                 .then(() => res.redirect('/contacts'))
-                .catch(() => res.redirect('/'));
+                .catch(err => {
+                    console.log(err);
+                    res.redirect('/');
+                });
         },
         show(req, res) {
             const { _id } = req.session.user;
@@ -31,9 +37,9 @@ module.exports = app => {
                     const { contacts } = user;
                     const contact = contacts.find(ct => ct._id.toString() === contactId);
                     res.render('contacts/show', {contact: contact});
-                }).catch((err) => {
+                }).catch(err => {
                     console.log(err);
-                    res.redirect('/')
+                    res.redirect('/');
                 });
         },
         edit(req, res) {
@@ -45,7 +51,10 @@ module.exports = app => {
                     const { contacts } = user;
                     const contact = contacts.find(ct => ct._id.toString() === contactId);
                     res.render('contacts/edit', {contact: contact});
-                }).catch(() => res.redirect('/'));
+                }).catch(err => {
+                    console.log(err);
+                    res.redirect('/');
+                });
         },
         update(req, res) {
             const { contact } = req.body;
@@ -58,7 +67,10 @@ module.exports = app => {
 
             User.update(where, set)
                 .then(() => res.redirect('/contacts'))
-                .catch(() => res.redirect('/'));
+                .catch(() => {
+                    console.log(err);
+                    res.redirect('/');
+                });
         },
         delete(req, res) {
             const { _id } = req.session.user;
@@ -70,7 +82,7 @@ module.exports = app => {
                 .then(() => res.redirect('/contacts'))
                 .catch(err => {
                     console.log(err);
-                    res.redirect('/')
+                    res.redirect('/');
                 });
         }
     };

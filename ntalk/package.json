@@ -4,12 +4,13 @@
   "version": "0.0.1",
   "scripts": {
     "test": "set \"NODE_ENV=test\"&&node node_modules/mocha/bin/mocha --reporter spec",
-    "start": "node app"
+    "start": "node clusters >> app.log"
   },
   "author": "Danilo Ameida",
   "license": "ISC",
   "dependencies": {
     "body-parser": "1.18.2",
+    "compression": "1.7.1",
     "consign": "0.1.6",
     "cookie": "0.3.1",
     "crypto": "^1.0.1",

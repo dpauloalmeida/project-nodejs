@@ -4,12 +4,14 @@ const bodyParser = require('body-parser');
 const expressSession = require('express-session');
 const methodOverride = require('method-override');
 const cookie = require('cookie');
+const compression = require('compression');
 const error = require('../app/middleware/error');
 
 module.exports = () => {
     const app = express();
     const store = new expressSession.MemoryStore();
 
+    app.use(compression());
     app.use(express.static('./app/public'));
 
     // view engine setup
@@ -32,7 +34,7 @@ module.exports = () => {
     // allows use a same path between the methods HTTP making override method
     app.use(methodOverride('_method'));
  
-    consign({cwd: 'app'})
+    consign({cwd: 'app', verbose: false})
     .include('db')
     .then('models')
     .then('controllers')
