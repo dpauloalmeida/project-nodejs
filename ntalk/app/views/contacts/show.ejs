@@ -2,15 +2,21 @@
 <header>
     <h2>Ntalk - Data Contact</h2>
 </header>
-<section>
-    <form action="/contacts/<%= contact._id %>?_method=delete" method="post">
-        <p><label>Name:</label><%= contact.name %></p>
-        <p><label>Email:</label><%= contact.email %></p>
-        <p>
-            <button type="submit">Delete</button>
-            <a href="/contacts/<%= contact._id %>/edit">Edit</a>
-        </p>
-    </form>
+<section class="show">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form action="/contacts/<%= contact._id %>?_method=delete" method="post">
+                    <p><label>Name:</label> <%= contact.name %></p>
+                    <p><label>Email: </label> <%= contact.email %></p>
+                    <p>
+                        <button class="btn btn-primary" type="submit">Delete</button>
+                        <a class="btn btn-secondary" href="/contacts/<%= contact._id %>/edit">Edit</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
 <% include ../exit %>
 <% include ../footer %>

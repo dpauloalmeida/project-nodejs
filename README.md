@@ -26,6 +26,8 @@ This is simple project of the book Code House - Node.js
 
 * [Supertest](https://github.com/visionmedia/supertest) - The motivation with this module is to provide a high-level abstraction for testing HTTP, while still allowing you to drop down to the lower-level API provided by superagent.
 
+* [Bootstrap](https://getbootstrap.com/) - Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
+
 ## Authors
 
 See the list of [contributors](https://github.com/daniloalmeidapb/project-exploring-api-and-library-java/graphs/contributors) who participated in this project.

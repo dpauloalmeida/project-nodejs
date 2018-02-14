@@ -18,7 +18,7 @@ header h1 {
   font-size: 50px;
 }
 
-.form-register .form-control {
+.form-register .form-control, .edit .form-control {
   width: 250px;
 }
 
@@ -46,11 +46,23 @@ header h1 {
   width: 75px;
 }
 
+.show p label, .edit label {
+  font-weight: bold;
+}
+
+.show button, .show a {
+  width: 75px;
+}
+
 .form-signin {
     margin: 0 auto;
     max-width: 330px;
     padding: 15px;
     text-align: center;
+}
+
+.msg {
+  text-align: center;
 }
 
 .exit {
