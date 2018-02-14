@@ -1,0 +1,28 @@
+{
+  "name": "ntalk",
+  "description": "Node Task - Contact Schedule",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "set \"NODE_ENV=test\"&&node node_modules/mocha/bin/mocha --reporter spec",
+    "start": "node app"
+  },
+  "author": "Danilo Ameida",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "consign": "0.1.6",
+    "cookie": "0.3.1",
+    "crypto": "^1.0.1",
+    "ejs": "2.5.7",
+    "express": "4.15.5",
+    "express-session": "1.15.6",
+    "method-override": "2.3.10",
+    "mongoose": "5.0.2",
+    "socket.io": "2.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.0",
+    "supertest": "^3.0.0",
+    "should": "^13.2.1"
+  }
+}

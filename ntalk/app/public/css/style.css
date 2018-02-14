@@ -1,0 +1,70 @@
+body {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: gainsboro;
+}
+
+a {
+  color: #00B7FF;
+}
+
+header {
+  margin-top: 50px;
+  font-family: "Swis721 Blk BT", Helvetica, Arial, sans-serif;
+  color: dimgrey;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+}
+
+.form-register .form-control {
+  width: 250px;
+}
+
+.form-register .btn {
+  width: 120px;
+}
+
+.contacts {
+  margin: 10px 0 10px 0;
+}
+
+.contacts .table {
+  background-color: white;
+}
+
+.contacts .table th {
+  font-weight: bold;
+}
+
+.contacts .table th, .contacts .table td {
+  vertical-align: middle;
+}
+
+.contacts .table td a {
+  width: 75px;
+}
+
+.form-signin {
+    margin: 0 auto;
+    max-width: 330px;
+    padding: 15px;
+    text-align: center;
+}
+
+.exit {
+  text-align: right;
+}
+
+footer {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px 0px 30px 0px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  background-color: white;
+  color: dimgrey;
+  bottom: 0;
+}

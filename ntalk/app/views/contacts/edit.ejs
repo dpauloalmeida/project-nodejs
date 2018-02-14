@@ -1,0 +1,15 @@
+<% include ../header %>
+<header>
+    <h2>Ntalk - Edit Contact</h2>
+</header>
+<section>
+    <form action="/contacts/<%- contact._id %>?_method=put" method="post">
+        <label>Name:</label>
+        <input type="text" name="contact[name]" value="<%= contact.name %>">
+        <label>Email:</label>
+        <input type="text" name="contact[email]" value="<%= contact.email %>">
+        <button type="submit">Update</button>
+    </form>
+</section>
+<% include ../exit %>
+<% include ../footer %>

@@ -1,0 +1,7 @@
+npm install -g express
+
+express -h
+
+express "project" --ejs
+cd "project"
+npm install
