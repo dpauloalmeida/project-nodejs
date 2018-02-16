@@ -1,7 +1,7 @@
 const { Types: { ObjectId } } = require('mongoose');
 
 module.exports = app => {
-    const {User} = app.models;
+    const { User } = app.models;
 
     const ContactController = {
         index(req, res) {

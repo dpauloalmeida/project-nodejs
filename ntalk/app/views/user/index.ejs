@@ -1,11 +1,11 @@
 <% include ../header %>
 <header>
     <h1>Ntalk</h1>
-    <h4>Welcome</h4>
+    <h4>Register</h4>
 </header>
 <section>
     <div class="container form-signin">
-        <form action="/login" method="POST">
+        <form action="/register" method="post">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">
@@ -24,10 +24,10 @@
                 <input type="password" class="form-control" name="user[password]" placeholder="Password">
             </div>
     
-            <button class="btn btn-success btn-block" type="submit">Login</button>
+            <button class="btn btn-success btn-block" type="submit">Register</button>
         </form>
 
-        <p>Create a new <a href="/register">account</a></p>
+        <p>Go back to <a href="/">login</a></p>
     </div>
 
 </section>

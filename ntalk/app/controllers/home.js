@@ -22,7 +22,6 @@ module.exports = app => {
                     req.session.user = user;
                     res.redirect('/contacts');
                 }).catch(() => res.redirect('/'));
-
         },
         logout(req, res) {
             req.session.destroy();

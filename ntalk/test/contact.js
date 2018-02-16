@@ -1,4 +1,4 @@
-const express = require('../config/express')();
+const express = require('../config/express');
 const request = require('supertest')(express);
 
 describe('#ContactController', () => {
