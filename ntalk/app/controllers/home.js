@@ -8,6 +8,7 @@ module.exports = app => {
             } else {
                 res.redirect('/contacts');
             }
+            
         },
         login(req, res) {
             const { user } = req.body;
